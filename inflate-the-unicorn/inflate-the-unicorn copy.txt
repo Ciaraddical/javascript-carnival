@@ -1,0 +1,29 @@
+// -    -   -   -   -  //
+// JAVASCRIPT CARNIVAL //
+// -    -   -   -   -  //
+
+console.log('Inflate The Unicorn!')
+
+// Using the onclick method to call it, you will need to write a function that gets called every time you click on one of the unicorns.
+// so I gotta make an onclick object for the images
+// then everytime it gets clicked, run this function
+// then the function will update the image
+// until it reaches the end
+
+// so currently have an array of the images.
+
+let images = document.getElementsByClassName('inflate-an-image')
+
+// I need to make this onclick thing happen for all images
+
+for (let i = 0; i < images.length; i++) {
+  images[i].onclick = imagesClicked
+}
+
+function imagesClicked(e) {
+  console.log('image clicked')
+}
+
+// images.onclick = function () {
+//   console.log('image has been clicked!')
+// }
